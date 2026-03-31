@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-04-01T00:00:00Z",
+  "themes": [
+    {
+      "id": "dracula",
+      "name": "Dracula",
+      "description": "A dark theme for Tengra inspired by the famous Dracula palette.",
+      "author": "Dracula Team",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/themes/dracula.theme.json",
+      "previewColor": "231 15% 18%",
+      "appearance": "dark",
+      "itemType": "theme"
+    }
+  ],
+  "mcp": []
+}

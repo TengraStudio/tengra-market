@@ -1,0 +1,30 @@
+{
+  "id": "dracula",
+  "name": "dracula-theme",
+  "displayName": "Dracula",
+  "version": "1.0.0",
+  "type": "dark",
+  "description": "A dark theme for Tengra inspired by the famous Dracula palette.",
+  "author": "Dracula Team",
+  "colors": {
+    "background": "231 15% 18%",
+    "foreground": "60 30% 96%",
+    "card": "231 15% 22%",
+    "cardForeground": "60 30% 96%",
+    "popover": "231 15% 18%",
+    "popoverForeground": "60 30% 96%",
+    "primary": "265 89% 78%",
+    "primaryForeground": "231 15% 18%",
+    "secondary": "231 15% 30%",
+    "secondaryForeground": "60 30% 96%",
+    "accent": "191 100% 88%",
+    "accentForeground": "231 15% 18%",
+    "destructive": "0 100% 67%",
+    "destructiveForeground": "60 30% 96%",
+    "muted": "225 27% 51%",
+    "mutedForeground": "60 30% 96%",
+    "border": "231 15% 30%",
+    "input": "231 15% 30%",
+    "ring": "265 89% 78%"
+  }
+}
