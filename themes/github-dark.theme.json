@@ -1,0 +1,30 @@
+{
+  "id": "github-dark",
+  "name": "github-dark",
+  "displayName": "GitHub Dark",
+  "version": "1.0.0",
+  "type": "dark",
+  "description": "GitHub Dark (by GitHub) theme adapted for Tengra.",
+  "author": "GitHub",
+  "colors": {
+    "background": "210 18% 7%",
+    "foreground": "210 17% 82%",
+    "card": "210 18% 7%",
+    "cardForeground": "210 17% 82%",
+    "popover": "210 18% 7%",
+    "popoverForeground": "210 17% 82%",
+    "primary": "212 92% 43%",
+    "primaryForeground": "0 0% 0%",
+    "secondary": "210 18% 7%",
+    "secondaryForeground": "210 17% 82%",
+    "accent": "212 92% 43%",
+    "accentForeground": "210 18% 7%",
+    "destructive": "0 84% 60%",
+    "destructiveForeground": "0 0% 100%",
+    "muted": "0 0% 20%",
+    "mutedForeground": "210 17% 82%",
+    "border": "0 0% 30%",
+    "input": "0 0% 30%",
+    "ring": "212 92% 43%"
+  }
+}

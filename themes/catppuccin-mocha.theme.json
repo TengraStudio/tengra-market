@@ -1,0 +1,30 @@
+{
+  "id": "catppuccin-mocha",
+  "name": "catppuccin-mocha",
+  "displayName": "Catppuccin Mocha",
+  "version": "1.0.0",
+  "type": "dark",
+  "description": "Catppuccin Mocha (by Catppuccin Org) theme adapted for Tengra.",
+  "author": "Catppuccin Org",
+  "colors": {
+    "background": "240 21% 12%",
+    "foreground": "240 27% 95%",
+    "card": "240 21% 12%",
+    "cardForeground": "240 27% 95%",
+    "popover": "240 21% 12%",
+    "popoverForeground": "240 27% 95%",
+    "primary": "267 84% 81%",
+    "primaryForeground": "0 0% 0%",
+    "secondary": "240 21% 12%",
+    "secondaryForeground": "240 27% 95%",
+    "accent": "267 84% 81%",
+    "accentForeground": "240 21% 12%",
+    "destructive": "0 84% 60%",
+    "destructiveForeground": "0 0% 100%",
+    "muted": "0 0% 20%",
+    "mutedForeground": "240 27% 95%",
+    "border": "0 0% 30%",
+    "input": "0 0% 30%",
+    "ring": "267 84% 81%"
+  }
+}

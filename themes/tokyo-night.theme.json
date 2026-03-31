@@ -1,0 +1,30 @@
+{
+  "id": "tokyo-night",
+  "name": "tokyo-night",
+  "displayName": "Tokyo Night",
+  "version": "1.0.0",
+  "type": "dark",
+  "description": "Tokyo Night (by enkia) theme adapted for Tengra.",
+  "author": "enkia",
+  "colors": {
+    "background": "234 17% 12%",
+    "foreground": "223 20% 84%",
+    "card": "234 17% 12%",
+    "cardForeground": "223 20% 84%",
+    "popover": "234 17% 12%",
+    "popoverForeground": "223 20% 84%",
+    "primary": "210 100% 70%",
+    "primaryForeground": "0 0% 0%",
+    "secondary": "234 17% 12%",
+    "secondaryForeground": "223 20% 84%",
+    "accent": "210 100% 70%",
+    "accentForeground": "234 17% 12%",
+    "destructive": "0 84% 60%",
+    "destructiveForeground": "0 0% 100%",
+    "muted": "0 0% 20%",
+    "mutedForeground": "223 20% 84%",
+    "border": "0 0% 30%",
+    "input": "0 0% 30%",
+    "ring": "210 100% 70%"
+  }
+}

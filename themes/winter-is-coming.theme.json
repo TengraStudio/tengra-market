@@ -1,0 +1,30 @@
+{
+  "id": "winter-is-coming",
+  "name": "winter-is-coming",
+  "displayName": "Winter is Coming",
+  "version": "1.0.0",
+  "type": "dark",
+  "description": "Winter is Coming (by John Papa) theme adapted for Tengra.",
+  "author": "John Papa",
+  "colors": {
+    "background": "210 31% 12%",
+    "foreground": "60 30% 96%",
+    "card": "210 31% 12%",
+    "cardForeground": "60 30% 96%",
+    "popover": "210 31% 12%",
+    "popoverForeground": "60 30% 96%",
+    "primary": "191 100% 88%",
+    "primaryForeground": "0 0% 0%",
+    "secondary": "210 31% 12%",
+    "secondaryForeground": "60 30% 96%",
+    "accent": "191 100% 88%",
+    "accentForeground": "210 31% 12%",
+    "destructive": "0 84% 60%",
+    "destructiveForeground": "0 0% 100%",
+    "muted": "0 0% 20%",
+    "mutedForeground": "60 30% 96%",
+    "border": "0 0% 30%",
+    "input": "0 0% 30%",
+    "ring": "191 100% 88%"
+  }
+}

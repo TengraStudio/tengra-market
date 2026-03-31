@@ -1,0 +1,30 @@
+{
+  "id": "shades-of-purple",
+  "name": "shades-of-purple",
+  "displayName": "Shades of Purple",
+  "version": "1.0.0",
+  "type": "dark",
+  "description": "Shades of Purple (by Ahmad Awais) theme adapted for Tengra.",
+  "author": "Ahmad Awais",
+  "colors": {
+    "background": "248 39% 18%",
+    "foreground": "60 30% 96%",
+    "card": "248 39% 18%",
+    "cardForeground": "60 30% 96%",
+    "popover": "248 39% 18%",
+    "popoverForeground": "60 30% 96%",
+    "primary": "45 100% 51%",
+    "primaryForeground": "0 0% 0%",
+    "secondary": "248 39% 18%",
+    "secondaryForeground": "60 30% 96%",
+    "accent": "45 100% 51%",
+    "accentForeground": "248 39% 18%",
+    "destructive": "0 84% 60%",
+    "destructiveForeground": "0 0% 100%",
+    "muted": "0 0% 20%",
+    "mutedForeground": "60 30% 96%",
+    "border": "0 0% 30%",
+    "input": "0 0% 30%",
+    "ring": "45 100% 51%"
+  }
+}

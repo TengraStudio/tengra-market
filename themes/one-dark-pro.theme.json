@@ -1,0 +1,30 @@
+{
+  "id": "one-dark-pro",
+  "name": "one-dark-pro",
+  "displayName": "One Dark Pro",
+  "version": "1.0.0",
+  "type": "dark",
+  "description": "One Dark Pro (by Binaryify) theme adapted for Tengra.",
+  "author": "Binaryify",
+  "colors": {
+    "background": "220 12% 18%",
+    "foreground": "220 14% 71%",
+    "card": "220 12% 18%",
+    "cardForeground": "220 14% 71%",
+    "popover": "220 12% 18%",
+    "popoverForeground": "220 14% 71%",
+    "primary": "207 82% 66%",
+    "primaryForeground": "0 0% 0%",
+    "secondary": "220 12% 18%",
+    "secondaryForeground": "220 14% 71%",
+    "accent": "207 82% 66%",
+    "accentForeground": "220 12% 18%",
+    "destructive": "0 84% 60%",
+    "destructiveForeground": "0 0% 100%",
+    "muted": "0 0% 20%",
+    "mutedForeground": "220 14% 71%",
+    "border": "0 0% 30%",
+    "input": "0 0% 30%",
+    "ring": "207 82% 66%"
+  }
+}

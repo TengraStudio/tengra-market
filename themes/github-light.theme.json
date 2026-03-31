@@ -1,0 +1,30 @@
+{
+  "id": "github-light",
+  "name": "github-light",
+  "displayName": "GitHub Light",
+  "version": "1.0.0",
+  "type": "light",
+  "description": "GitHub Light (by GitHub) theme adapted for Tengra.",
+  "author": "GitHub",
+  "colors": {
+    "background": "0 0% 100%",
+    "foreground": "0 0% 15%",
+    "card": "0 0% 100%",
+    "cardForeground": "0 0% 15%",
+    "popover": "0 0% 100%",
+    "popoverForeground": "0 0% 15%",
+    "primary": "212 92% 43%",
+    "primaryForeground": "0 0% 100%",
+    "secondary": "0 0% 100%",
+    "secondaryForeground": "0 0% 15%",
+    "accent": "212 92% 43%",
+    "accentForeground": "0 0% 100%",
+    "destructive": "0 84% 60%",
+    "destructiveForeground": "0 0% 100%",
+    "muted": "0 0% 80%",
+    "mutedForeground": "0 0% 15%",
+    "border": "0 0% 30%",
+    "input": "0 0% 30%",
+    "ring": "212 92% 43%"
+  }
+}

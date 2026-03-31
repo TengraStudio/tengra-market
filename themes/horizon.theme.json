@@ -1,0 +1,30 @@
+{
+  "id": "horizon",
+  "name": "horizon",
+  "displayName": "Horizon",
+  "version": "1.0.0",
+  "type": "dark",
+  "description": "Horizon (by Jonathan Olaleye) theme adapted for Tengra.",
+  "author": "Jonathan Olaleye",
+  "colors": {
+    "background": "233 16% 13%",
+    "foreground": "252 4% 85%",
+    "card": "233 16% 13%",
+    "cardForeground": "252 4% 85%",
+    "popover": "233 16% 13%",
+    "popoverForeground": "252 4% 85%",
+    "primary": "5 74% 65%",
+    "primaryForeground": "0 0% 0%",
+    "secondary": "233 16% 13%",
+    "secondaryForeground": "252 4% 85%",
+    "accent": "5 74% 65%",
+    "accentForeground": "233 16% 13%",
+    "destructive": "0 84% 60%",
+    "destructiveForeground": "0 0% 100%",
+    "muted": "0 0% 20%",
+    "mutedForeground": "252 4% 85%",
+    "border": "0 0% 30%",
+    "input": "0 0% 30%",
+    "ring": "5 74% 65%"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "nord",
+  "name": "nord",
+  "displayName": "Nord",
+  "version": "1.0.0",
+  "type": "dark",
+  "description": "Nord (by Arctic Ice Studio) theme adapted for Tengra.",
+  "author": "Arctic Ice Studio",
+  "colors": {
+    "background": "220 16% 22%",
+    "foreground": "218 27% 92%",
+    "card": "220 16% 22%",
+    "cardForeground": "218 27% 92%",
+    "popover": "220 16% 22%",
+    "popoverForeground": "218 27% 92%",
+    "primary": "193 43% 67%",
+    "primaryForeground": "0 0% 0%",
+    "secondary": "220 16% 22%",
+    "secondaryForeground": "218 27% 92%",
+    "accent": "193 43% 67%",
+    "accentForeground": "220 16% 22%",
+    "destructive": "0 84% 60%",
+    "destructiveForeground": "0 0% 100%",
+    "muted": "0 0% 20%",
+    "mutedForeground": "218 27% 92%",
+    "border": "0 0% 30%",
+    "input": "0 0% 30%",
+    "ring": "193 43% 67%"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "solarized-dark",
+  "name": "solarized-dark",
+  "displayName": "Solarized Dark",
+  "version": "1.0.0",
+  "type": "dark",
+  "description": "Solarized Dark (by Ethan Schoonover) theme adapted for Tengra.",
+  "author": "Ethan Schoonover",
+  "colors": {
+    "background": "192 100% 13%",
+    "foreground": "192 10% 50%",
+    "card": "192 100% 13%",
+    "cardForeground": "192 10% 50%",
+    "popover": "192 100% 13%",
+    "popoverForeground": "192 10% 50%",
+    "primary": "175 59% 40%",
+    "primaryForeground": "0 0% 0%",
+    "secondary": "192 100% 13%",
+    "secondaryForeground": "192 10% 50%",
+    "accent": "175 59% 40%",
+    "accentForeground": "192 100% 13%",
+    "destructive": "0 84% 60%",
+    "destructiveForeground": "0 0% 100%",
+    "muted": "0 0% 20%",
+    "mutedForeground": "192 10% 50%",
+    "border": "0 0% 30%",
+    "input": "0 0% 30%",
+    "ring": "175 59% 40%"
+  }
+}

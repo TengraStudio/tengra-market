@@ -1,0 +1,30 @@
+{
+  "id": "noctis",
+  "name": "noctis",
+  "displayName": "Noctis Lux",
+  "version": "1.0.0",
+  "type": "light",
+  "description": "Noctis Lux (by liviuscheregi) theme adapted for Tengra.",
+  "author": "liviuscheregi",
+  "colors": {
+    "background": "180 20% 98%",
+    "foreground": "210 20% 20%",
+    "card": "180 20% 98%",
+    "cardForeground": "210 20% 20%",
+    "popover": "180 20% 98%",
+    "popoverForeground": "210 20% 20%",
+    "primary": "180 80% 40%",
+    "primaryForeground": "0 0% 100%",
+    "secondary": "180 20% 98%",
+    "secondaryForeground": "210 20% 20%",
+    "accent": "180 80% 40%",
+    "accentForeground": "180 20% 98%",
+    "destructive": "0 84% 60%",
+    "destructiveForeground": "0 0% 100%",
+    "muted": "0 0% 80%",
+    "mutedForeground": "210 20% 20%",
+    "border": "0 0% 30%",
+    "input": "0 0% 30%",
+    "ring": "180 80% 40%"
+  }
+}

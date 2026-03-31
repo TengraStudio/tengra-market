@@ -1,0 +1,30 @@
+{
+  "id": "ayu-mirage",
+  "name": "ayu-mirage",
+  "displayName": "Ayu Mirage",
+  "version": "1.0.0",
+  "type": "dark",
+  "description": "Ayu Mirage (by ayu-theme) theme adapted for Tengra.",
+  "author": "ayu-theme",
+  "colors": {
+    "background": "210 27% 12%",
+    "foreground": "210 14% 71%",
+    "card": "210 27% 12%",
+    "cardForeground": "210 14% 71%",
+    "popover": "210 27% 12%",
+    "popoverForeground": "210 14% 71%",
+    "primary": "34 100% 74%",
+    "primaryForeground": "0 0% 0%",
+    "secondary": "210 27% 12%",
+    "secondaryForeground": "210 14% 71%",
+    "accent": "34 100% 74%",
+    "accentForeground": "210 27% 12%",
+    "destructive": "0 84% 60%",
+    "destructiveForeground": "0 0% 100%",
+    "muted": "0 0% 20%",
+    "mutedForeground": "210 14% 71%",
+    "border": "0 0% 30%",
+    "input": "0 0% 30%",
+    "ring": "34 100% 74%"
+  }
+}

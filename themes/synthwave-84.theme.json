@@ -1,0 +1,30 @@
+{
+  "id": "synthwave-84",
+  "name": "synthwave-84",
+  "displayName": "SynthWave '84",
+  "version": "1.0.0",
+  "type": "dark",
+  "description": "SynthWave '84 (by Robb Owen) theme adapted for Tengra.",
+  "author": "Robb Owen",
+  "colors": {
+    "background": "253 44% 12%",
+    "foreground": "300 100% 70%",
+    "card": "253 44% 12%",
+    "cardForeground": "300 100% 70%",
+    "popover": "253 44% 12%",
+    "popoverForeground": "300 100% 70%",
+    "primary": "340 100% 70%",
+    "primaryForeground": "0 0% 0%",
+    "secondary": "253 44% 12%",
+    "secondaryForeground": "300 100% 70%",
+    "accent": "340 100% 70%",
+    "accentForeground": "253 44% 12%",
+    "destructive": "0 84% 60%",
+    "destructiveForeground": "0 0% 100%",
+    "muted": "0 0% 20%",
+    "mutedForeground": "300 100% 70%",
+    "border": "0 0% 30%",
+    "input": "0 0% 30%",
+    "ring": "340 100% 70%"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "material-palenight",
+  "name": "material-palenight",
+  "displayName": "Material Palenight",
+  "version": "1.0.0",
+  "type": "dark",
+  "description": "Material Palenight (by Equinusocio) theme adapted for Tengra.",
+  "author": "Equinusocio",
+  "colors": {
+    "background": "232 14% 19%",
+    "foreground": "220 14% 71%",
+    "card": "232 14% 19%",
+    "cardForeground": "220 14% 71%",
+    "popover": "232 14% 19%",
+    "popoverForeground": "220 14% 71%",
+    "primary": "199 89% 48%",
+    "primaryForeground": "0 0% 0%",
+    "secondary": "232 14% 19%",
+    "secondaryForeground": "220 14% 71%",
+    "accent": "199 89% 48%",
+    "accentForeground": "232 14% 19%",
+    "destructive": "0 84% 60%",
+    "destructiveForeground": "0 0% 100%",
+    "muted": "0 0% 20%",
+    "mutedForeground": "220 14% 71%",
+    "border": "0 0% 30%",
+    "input": "0 0% 30%",
+    "ring": "199 89% 48%"
+  }
+}

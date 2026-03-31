@@ -1,0 +1,30 @@
+{
+  "id": "night-owl",
+  "name": "night-owl",
+  "displayName": "Night Owl",
+  "version": "1.0.0",
+  "type": "dark",
+  "description": "Night Owl (by sdras) theme adapted for Tengra.",
+  "author": "sdras",
+  "colors": {
+    "background": "222 47% 11%",
+    "foreground": "210 34% 63%",
+    "card": "222 47% 11%",
+    "cardForeground": "210 34% 63%",
+    "popover": "222 47% 11%",
+    "popoverForeground": "210 34% 63%",
+    "primary": "180 100% 50%",
+    "primaryForeground": "0 0% 0%",
+    "secondary": "222 47% 11%",
+    "secondaryForeground": "210 34% 63%",
+    "accent": "180 100% 50%",
+    "accentForeground": "222 47% 11%",
+    "destructive": "0 84% 60%",
+    "destructiveForeground": "0 0% 100%",
+    "muted": "0 0% 20%",
+    "mutedForeground": "210 34% 63%",
+    "border": "0 0% 30%",
+    "input": "0 0% 30%",
+    "ring": "180 100% 50%"
+  }
+}
