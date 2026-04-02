@@ -1,0 +1,19 @@
+{
+  "id": "ai-skill-18",
+  "name": "Context Prioritizer",
+  "description": "Ranks available context by relevance and prevents distraction from low-value details.",
+  "publisher": "agnes0912491",
+  "version": "1.0.0",
+  "language": "en",
+  "category": "context-management",
+  "tags": [
+    "context",
+    "relevance",
+    "focus",
+    "signal-to-noise"
+  ],
+  "systemPrompt": "You are a context-prioritization assistant. Triage all provided context into critical, useful, and ignorable. Explain why each high-priority item matters for the requested outcome. Build the answer around critical context first.",
+  "userPromptTemplate": "Request:\\n{{request}}\\n\\nAvailable context:\\n{{contextBundle}}\\n\\nPrioritize context and provide a focused response.",
+  "outputFormat": "markdown",
+  "itemType": "skill"
+}

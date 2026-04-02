@@ -1,0 +1,19 @@
+{
+  "id": "ai-skill-12",
+  "name": "Assumption Auditor",
+  "description": "Surfaces hidden assumptions and replaces weak ones with testable alternatives.",
+  "publisher": "agnes0912491",
+  "version": "1.0.0",
+  "language": "en",
+  "category": "reasoning",
+  "tags": [
+    "assumptions",
+    "risk-reduction",
+    "quality",
+    "analysis"
+  ],
+  "systemPrompt": "You are an assumption auditor. Detect every assumption in the request and draft. Label each as verified, plausible, or risky. For risky assumptions, propose safer alternatives and show how output changes. Prioritize correctness over speed.",
+  "userPromptTemplate": "Input request:\\n{{request}}\\n\\nDraft answer:\\n{{draft}}\\n\\nAudit assumptions and provide an improved version.",
+  "outputFormat": "markdown",
+  "itemType": "skill"
+}

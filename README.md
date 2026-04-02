@@ -1,6 +1,6 @@
 # Tengra Marketplace
 
-This repository hosts the official and community-contributed themes, MCP modules, and language packs for [Tengra](https://github.com/TengraStudio/tengra).
+This repository hosts the official and community-contributed themes, MCP modules, language packs, and skills for [Tengra](https://github.com/TengraStudio/tengra).
 
 ## Repository Structure
 
@@ -8,6 +8,7 @@ This repository hosts the official and community-contributed themes, MCP modules
 - `themes/`: Theme manifest files.
 - `mcp/`: MCP module metadata.
 - `languages/`: Runtime language pack files.
+- `skills/`: Skill manifest files.
 - `models/ollama-models.json`: Scraped public Ollama model index.
 - `models/huggingface-models.json`: Scraped Hugging Face model index (filtered for Tengra-compatible categories).
 - `scripts/scrape-ollama-models.mjs`: Ollama scraper script.
@@ -41,7 +42,7 @@ This repository hosts the official and community-contributed themes, MCP modules
 
 ## Contributing
 
-If you would like to contribute a theme, an MCP module, or a language pack, please open a Pull Request with your manifest file and update the `registry.json` accordingly.
+If you would like to contribute a theme, an MCP module, a language pack, or a skill, please open a Pull Request with your manifest file and update the `registry.json` accordingly.
 
 ### Theme Format
 
@@ -50,6 +51,10 @@ Themes must follow the `ThemeManifest` structure with colors defined in HSL form
 ### Language Pack Format
 
 Language packs must be JSON files with locale metadata plus a `translations` object that mirrors Tengra's English translation tree.
+
+### Skill Format
+
+Skills are JSON manifests stored in `skills/` and indexed under the `skills` array in `registry.json`. See `skills/README.md` for the required schema and field definitions.
 
 ---
 © 2026 Tengra Studio

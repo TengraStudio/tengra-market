@@ -1,0 +1,19 @@
+{
+  "id": "ai-skill-15",
+  "name": "Decision Tradeoff Mapper",
+  "description": "Compares options with explicit tradeoffs, risks, and recommended choice rationale.",
+  "publisher": "agnes0912491",
+  "version": "1.0.0",
+  "language": "en",
+  "category": "decision-support",
+  "tags": [
+    "tradeoffs",
+    "options",
+    "decision-making",
+    "prioritization"
+  ],
+  "systemPrompt": "You are a decision-support assistant. Build a tradeoff map across candidate options using criteria, benefits, costs, risks, and reversibility. Recommend one option with justification tied to stated priorities. Make uncertainty explicit.",
+  "userPromptTemplate": "Decision context:\\n{{context}}\\n\\nOptions:\\n{{options}}\\n\\nPriorities:\\n{{priorities}}\\n\\nReturn a tradeoff map and recommendation.",
+  "outputFormat": "markdown",
+  "itemType": "skill"
+}

@@ -1,6 +1,6 @@
 {
-  "version": "1.1.0",
-  "lastUpdated": "2026-03-31T23:20:55.565Z",
+  "version": "1.2.0",
+  "lastUpdated": "2026-04-02T22:51:32.5661010Z",
   "themes": [
     {
       "id": "dracula",
@@ -223,5 +223,384 @@
       "itemType": "theme"
     }
   ],
-  "mcp": []
+  "mcp": [],
+  "languages": [
+    {
+      "id": "tengra-lang.tr",
+      "name": "Turkish",
+      "description": "Official Turkish language pack for Tengra.",
+      "author": "Tengra Studio",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/languages/tr.locale.json",
+      "itemType": "language",
+      "locale": "tr",
+      "nativeName": "Türkçe",
+      "rtl": false,
+      "coverage": 100,
+      "schemaVersion": "1.0.0"
+    }
+  ],
+  "skills": [
+    {
+      "id": "ai-skill-01",
+      "name": "Debugging Root Cause Investigator",
+      "description": "Improves AI debugging answers by forcing reproducible diagnosis, evidence gathering, and minimal-risk fixes.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-01.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "debugging",
+      "tags": [
+        "debugging",
+        "root-cause-analysis",
+        "triage",
+        "bug-fix"
+      ]
+    },
+    {
+      "id": "ai-skill-02",
+      "name": "Requirement Clarifier and Scope Guard",
+      "description": "Improves AI outputs by converting ambiguous requests into testable requirements with explicit scope boundaries.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-02.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "requirements",
+      "tags": [
+        "requirements",
+        "scope",
+        "acceptance-criteria",
+        "planning"
+      ]
+    },
+    {
+      "id": "ai-skill-03",
+      "name": "Architecture Decision Assistant",
+      "description": "Improves architectural answers by structuring trade-off analysis, constraints, and decision records.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-03.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "architecture",
+      "tags": [
+        "architecture",
+        "trade-offs",
+        "adr",
+        "system-design"
+      ]
+    },
+    {
+      "id": "ai-skill-04",
+      "name": "Test Strategy and Coverage Planner",
+      "description": "Improves AI-generated testing guidance with risk-based test plans, concrete cases, and coverage mapping.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-04.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "testing",
+      "tags": [
+        "testing",
+        "coverage",
+        "risk-based-testing",
+        "qa"
+      ]
+    },
+    {
+      "id": "ai-skill-05",
+      "name": "Refactoring Safety Planner",
+      "description": "Improves refactoring outputs by emphasizing behavior preservation, sequencing, and rollback-safe execution.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-05.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "refactoring",
+      "tags": [
+        "refactoring",
+        "code-quality",
+        "maintainability",
+        "safety"
+      ]
+    },
+    {
+      "id": "ai-skill-06",
+      "name": "Prompt Quality Optimizer",
+      "description": "Improves weak prompts into precise, high-signal prompts that yield reliable assistant outputs.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-06.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "prompting",
+      "tags": [
+        "prompt-engineering",
+        "clarity",
+        "ai-output-quality",
+        "iteration"
+      ]
+    },
+    {
+      "id": "ai-skill-07",
+      "name": "Security Review Hardener",
+      "description": "Improves AI security guidance with threat-focused analysis, vulnerability prioritization, and concrete mitigations.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-07.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "security",
+      "tags": [
+        "security",
+        "threat-modeling",
+        "vulnerabilities",
+        "secure-coding"
+      ]
+    },
+    {
+      "id": "ai-skill-08",
+      "name": "Performance Tuning Advisor",
+      "description": "Improves AI performance suggestions by enforcing measurement, bottleneck isolation, and impact estimates.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-08.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "performance",
+      "tags": [
+        "performance",
+        "profiling",
+        "optimization",
+        "latency"
+      ]
+    },
+    {
+      "id": "ai-skill-09",
+      "name": "Technical Documentation Improver",
+      "description": "Improves AI-generated docs by enforcing audience clarity, task orientation, and maintainable structure.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-09.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "documentation",
+      "tags": [
+        "documentation",
+        "developer-experience",
+        "readability",
+        "knowledge-transfer"
+      ]
+    },
+    {
+      "id": "ai-skill-10",
+      "name": "Answer Quality Critic and Rewriter",
+      "description": "Improves AI answers by diagnosing weaknesses and producing a stronger revised response with explicit quality checks.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-10.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "quality",
+      "tags": [
+        "quality-control",
+        "ai-evaluation",
+        "rewriting",
+        "answer-improvement"
+      ]
+    },
+    {
+      "id": "ai-skill-11",
+      "name": "Constraint Extractor",
+      "description": "Extracts explicit and implicit constraints from user requests before drafting a solution.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-11.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "reasoning",
+      "tags": [
+        "constraints",
+        "planning",
+        "accuracy",
+        "requirements"
+      ]
+    },
+    {
+      "id": "ai-skill-12",
+      "name": "Assumption Auditor",
+      "description": "Surfaces hidden assumptions and replaces weak ones with testable alternatives.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-12.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "reasoning",
+      "tags": [
+        "assumptions",
+        "risk-reduction",
+        "quality",
+        "analysis"
+      ]
+    },
+    {
+      "id": "ai-skill-13",
+      "name": "Claim Verifier",
+      "description": "Separates factual claims from opinions and marks confidence with evidence needs.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-13.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "factuality",
+      "tags": [
+        "verification",
+        "claims",
+        "confidence",
+        "reliability"
+      ]
+    },
+    {
+      "id": "ai-skill-14",
+      "name": "Counterexample Generator",
+      "description": "Stress-tests reasoning by producing edge cases and counterexamples before finalizing.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-14.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "reasoning",
+      "tags": [
+        "edge-cases",
+        "counterexamples",
+        "robustness",
+        "logic"
+      ]
+    },
+    {
+      "id": "ai-skill-15",
+      "name": "Decision Tradeoff Mapper",
+      "description": "Compares options with explicit tradeoffs, risks, and recommended choice rationale.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-15.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "decision-support",
+      "tags": [
+        "tradeoffs",
+        "options",
+        "decision-making",
+        "prioritization"
+      ]
+    },
+    {
+      "id": "ai-skill-16",
+      "name": "Failure Mode Forecaster",
+      "description": "Predicts likely failure modes and adds prevention and recovery steps.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-16.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "reliability",
+      "tags": [
+        "failure-modes",
+        "prevention",
+        "recovery",
+        "reliability"
+      ]
+    },
+    {
+      "id": "ai-skill-17",
+      "name": "Evaluation Plan Builder",
+      "description": "Creates measurable quality checks to evaluate an AI answer before delivery.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-17.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "quality-assurance",
+      "tags": [
+        "evaluation",
+        "metrics",
+        "qa",
+        "validation"
+      ]
+    },
+    {
+      "id": "ai-skill-18",
+      "name": "Context Prioritizer",
+      "description": "Ranks available context by relevance and prevents distraction from low-value details.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-18.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "context-management",
+      "tags": [
+        "context",
+        "relevance",
+        "focus",
+        "signal-to-noise"
+      ]
+    },
+    {
+      "id": "ai-skill-19",
+      "name": "Instruction Conflict Resolver",
+      "description": "Detects conflicting instructions and resolves them with a transparent priority rule.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-19.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "instruction-following",
+      "tags": [
+        "conflicts",
+        "priority-rules",
+        "compliance",
+        "clarity"
+      ]
+    },
+    {
+      "id": "ai-skill-20",
+      "name": "Actionable Rewrite Coach",
+      "description": "Rewrites vague responses into concrete, step-by-step, execution-ready guidance.",
+      "author": "agnes0912491",
+      "publisher": "agnes0912491",
+      "version": "1.0.0",
+      "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/skills/ai-skill-20.skill.json",
+      "itemType": "skill",
+      "language": "en",
+      "category": "communication",
+      "tags": [
+        "clarity",
+        "actionability",
+        "rewriting",
+        "execution"
+      ]
+    }
+  ]
 }
+

@@ -1,0 +1,19 @@
+{
+  "id": "ai-skill-04",
+  "name": "Test Strategy and Coverage Planner",
+  "description": "Improves AI-generated testing guidance with risk-based test plans, concrete cases, and coverage mapping.",
+  "publisher": "agnes0912491",
+  "version": "1.0.0",
+  "language": "en",
+  "category": "testing",
+  "tags": [
+    "testing",
+    "coverage",
+    "risk-based-testing",
+    "qa"
+  ],
+  "systemPrompt": "You are a test strategy expert. Build a risk-based test approach instead of generic test lists. Start from requirements and failure impact. Map what to test at unit, integration, contract, and end-to-end levels. Prioritize scenarios by risk and likelihood. Include happy paths, edge cases, error handling, and non-functional checks when relevant. Define test data needs, mocks or fixtures, and clear pass or fail criteria. Recommend minimal high-value tests first, then expansion plan.",
+  "userPromptTemplate": "System or feature:\\n{{feature}}\\n\\nRequirements:\\n{{requirements}}\\n\\nKnown risks:\\n{{risks}}\\n\\nCreate a prioritized test strategy and concrete test cases.",
+  "outputFormat": "markdown",
+  "itemType": "skill"
+}

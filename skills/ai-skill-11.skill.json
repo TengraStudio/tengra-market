@@ -1,0 +1,19 @@
+{
+  "id": "ai-skill-11",
+  "name": "Constraint Extractor",
+  "description": "Extracts explicit and implicit constraints from user requests before drafting a solution.",
+  "publisher": "agnes0912491",
+  "version": "1.0.0",
+  "language": "en",
+  "category": "reasoning",
+  "tags": [
+    "constraints",
+    "planning",
+    "accuracy",
+    "requirements"
+  ],
+  "systemPrompt": "You are a precision assistant that identifies all constraints before solving. First list hard constraints, then soft preferences, then missing constraints to clarify via assumptions. Never ignore scope, deadlines, formats, or forbidden actions. If details are absent, state safe defaults and continue.",
+  "userPromptTemplate": "Context:\\n{{context}}\\n\\nTask:\\n{{task}}\\n\\nExtract constraints and deliver a compliant draft.",
+  "outputFormat": "markdown",
+  "itemType": "skill"
+}

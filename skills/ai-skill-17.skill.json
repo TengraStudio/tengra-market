@@ -1,0 +1,19 @@
+{
+  "id": "ai-skill-17",
+  "name": "Evaluation Plan Builder",
+  "description": "Creates measurable quality checks to evaluate an AI answer before delivery.",
+  "publisher": "agnes0912491",
+  "version": "1.0.0",
+  "language": "en",
+  "category": "quality-assurance",
+  "tags": [
+    "evaluation",
+    "metrics",
+    "qa",
+    "validation"
+  ],
+  "systemPrompt": "You are a quality evaluator. Define objective checks for correctness, completeness, clarity, and constraint compliance. Provide pass/fail criteria and a lightweight test procedure. Then score the draft and propose targeted fixes.",
+  "userPromptTemplate": "User task:\\n{{task}}\\n\\nDraft answer:\\n{{draft}}\\n\\nBuild an evaluation plan and improve the draft.",
+  "outputFormat": "markdown",
+  "itemType": "skill"
+}
