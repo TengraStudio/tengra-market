@@ -54,7 +54,8 @@ Language packs must be JSON files with locale metadata plus a `translations` obj
 
 ### Skill Format
 
-Skills are JSON manifests stored in `skills/` and indexed under the `skills` array in `registry.json`. See `skills/README.md` for the required schema and field definitions.
+Skills are JSON manifests stored in `skills/` and indexed under the `skills` array in `registry.json`. See `skills/README.md` for the required schema and field definitions. Skill filenames now use descriptive kebab-case names (not numeric placeholders), and categories span software, education, research, marketing, operations, planning, and productivity use cases.
 
 ---
 © 2026 Tengra Studio
+

@@ -4,8 +4,8 @@ This directory contains marketplace skill manifests used by Tengra.
 
 ## File Naming
 
-- Use: `<skill-id>.skill.json`
-- Example: `ai-skill-01.skill.json`
+- Use descriptive kebab-case filenames that match the skill topic: `<descriptive-name>.skill.json`
+- Example: `debugging-root-cause-playbook.skill.json`
 
 ## Skill Manifest Format
 
@@ -41,3 +41,28 @@ Each registry entry should include at least:
 ## Content Language Policy
 
 Skill prompts and descriptions must be English-only unless a future localization policy is introduced.
+
+
+## Discovery Categories
+
+Current skills use the following categories:
+
+- `productivity`
+- `analysis`
+- `context-management`
+- `decision-support`
+- `factuality`
+- `reliability`
+- `instruction-following`
+- `education`
+- `writing`
+- `marketing`
+- `operations`
+- `project-planning`
+- `planning`
+- `quality-assurance`
+- `research`
+- `risk-management`
+- `software-quality`
+- `communication`
+
