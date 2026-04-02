@@ -9,7 +9,9 @@ This repository hosts the official and community-contributed themes, MCP modules
 - `mcp/`: MCP module metadata.
 - `languages/`: Runtime language pack files.
 - `models/ollama-models.json`: Scraped public Ollama model index.
+- `models/huggingface-models.json`: Scraped Hugging Face model index (filtered for Tengra-compatible categories).
 - `scripts/scrape-ollama-models.mjs`: Ollama scraper script.
+- `scripts/scrape-hf-models.mjs`: Hugging Face scraper script.
 
 ## Ollama model scraper automation
 
@@ -20,6 +22,22 @@ This repository hosts the official and community-contributed themes, MCP modules
   - Compares the generated model list with `models/ollama-models.json`
   - If there is no model-level change, workflow exits without commit
   - If there are changes (new/removed/updated models), JSON is updated and committed
+
+## Hugging Face model scraper automation
+
+- Manual trigger: GitHub Actions → **Scrape Hugging Face Models** → Run workflow
+- Automatic trigger: every Sunday (UTC) via schedule
+- Source: Hugging Face Models API
+- Filter: only Tengra-compatible categories derived from Tengra's own classifier:
+  - `coding`
+  - `chat`
+  - `multimodal`
+  - `embedding`
+  - `reasoning`
+  - `general`
+- Behavior:
+  - If model-level output is unchanged, workflow exits without commit
+  - If changed, `models/huggingface-models.json` is updated and committed
 
 ## Contributing
 
