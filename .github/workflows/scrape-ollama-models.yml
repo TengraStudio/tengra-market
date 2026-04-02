@@ -2,6 +2,12 @@ name: Scrape Ollama Models
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/scrape-ollama-models.yml'
+      - 'scripts/scrape-ollama-models.mjs'
   schedule:
     - cron: '0 3 * * 0'
 
