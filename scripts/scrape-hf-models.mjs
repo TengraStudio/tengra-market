@@ -135,6 +135,94 @@ async function fetchModelsPage(cursor = '') {
   };
 }
 
+function unescapeHtml(html) {
+  return html
+    .replace(/&quot;/g, '"')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&#39;/g, "'");
+}
+
+async function fetchModelDetail(modelId) {
+    const detailUrl = `${HF_BASE_URL}/${modelId}`;
+    const filesUrl = `${HF_BASE_URL}/api/models/${modelId}/tree/main`;
+    
+    try {
+        const [htmlResponse, filesResponse] = await Promise.all([
+            fetch(detailUrl, { headers: { 'User-Agent': USER_AGENT } }),
+            fetch(filesUrl, { headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' } })
+        ]);
+
+        let readme = '';
+        let modelSize = '';
+        let tensorType = '';
+
+        if (htmlResponse.ok) {
+            const html = await htmlResponse.text();
+            
+            // 1. Extract README/Model Card
+            const cardMatch = html.match(/<div[^>]*class=["'][^"']*model-card-content[^"']*["'][^>]*>([\s\S]*?)<\/div>/i) ||
+                            html.match(/<article[^>]*id=["']model-card["'][^>]*>([\s\S]*?)<\/article>/i) || 
+                            html.match(/<article[^>]*>([\s\S]*?)<\/article>/i);
+            
+            if (cardMatch) {
+                readme = cardMatch[1].trim()
+                    .replace(/\s+class=["'][^"']*["']/gi, '') 
+                    .replace(/<script\b[^>]*>([\s\S]*?)<\/script>/gim, '') 
+                    .replace(/<style\b[^>]*>([\s\S]*?)<\/style>/gim, '');
+            }
+
+            // 2. Extract technical specs from Svelte hydration data
+            const svelteMatch = html.match(/class="[^"]*SVELTE_HYDRATER[^"]*"[^>]*data-target="ModelTensorsParams"[^>]*data-props="([^"]*)"/i);
+            if (svelteMatch) {
+                try {
+                    const props = JSON.parse(unescapeHtml(svelteMatch[1]));
+                    if (props.safetensors?.parameters) {
+                        const types = Object.keys(props.safetensors.parameters);
+                        tensorType = types.join(', ');
+                        
+                        // Try to find total params
+                        const total = props.safetensors.total;
+                        if (total) {
+                            if (total >= 1e12) modelSize = `${(total / 1e12).toFixed(1)}T params`;
+                            else if (total >= 1e9) modelSize = `${(total / 1e9).toFixed(1)}B params`;
+                            else if (total >= 1e6) modelSize = `${(total / 1e6).toFixed(1)}M params`;
+                        }
+                    }
+                } catch (e) {
+                    // Ignore parse errors for specific metadata
+                }
+            }
+        }
+
+        const submodels = [];
+        if (filesResponse.ok) {
+            const files = await filesResponse.json();
+            if (Array.isArray(files)) {
+                for (const file of files) {
+                    if (file.path?.toLowerCase().endsWith('.gguf')) {
+                        submodels.push({
+                            id: file.path,
+                            name: file.path,
+                            size: file.size ? `${(file.size / 1024 / 1024 / 1024).toFixed(2)} GB` : 'unknown',
+                            oid: file.oid,
+                            modelSize: modelSize || undefined,
+                            tensorType: tensorType || undefined,
+                            downloadUrl: `${HF_BASE_URL}/${modelId}/resolve/main/${file.path}`
+                        });
+                    }
+                }
+            }
+        }
+
+        return { readme, submodels };
+    } catch (error) {
+        console.warn(`      [WARN] Failed to fetch details for ${modelId}:`, error.message);
+        return { readme: '', submodels: [] };
+    }
+}
+
 function normalizeModel(item) {
   const modelId = pickString(item.id) || pickString(item.modelId);
   if (!modelId) {
@@ -167,7 +255,9 @@ function normalizeModel(item) {
     likes: toNumber(item.likes),
     pipelineTag,
     category,
-    sourceUrl: `${HF_BASE_URL}/${modelId}`
+    sourceUrl: `${HF_BASE_URL}/${modelId}`,
+    readme: '', // Placeholder
+    submodels: [] // Placeholder
   };
 }
 
@@ -177,6 +267,9 @@ async function buildSnapshot() {
   const seenCursors = new Set();
   let cursor = '';
   let pagesFetched = 0;
+
+  // We limit detailed fetching to avoid extreme execution times, but collect list for all
+  const MAX_DETAIL_FETCH = 2000; 
 
   while (true) {
     if (cursor) {
@@ -201,18 +294,28 @@ async function buildSnapshot() {
     }
 
     pagesFetched += 1;
-    if (pagesFetched % 10 === 0) {
-      console.log(`Fetched ${pagesFetched} pages, collected ${models.length} models...`);
-    }
+    console.log(`Fetched ${pagesFetched} pages, collected ${models.length} models...`);
 
-    if (!nextCursor) {
+    if (!nextCursor || pagesFetched >= 10) { // Limit to 10 pages for sanity
       break;
     }
     cursor = nextCursor;
     await sleep(PAGE_DELAY_MS);
   }
 
-  models.sort((a, b) => a.id.localeCompare(b.id));
+  // Sort by downloads before fetching details so we get rich data for popular ones
+  models.sort((a, b) => b.downloads - a.downloads);
+
+  console.log(`Fetching rich metadata (readme/quants) for top ${MAX_DETAIL_FETCH} models...`);
+  for (let i = 0; i < Math.min(models.length, MAX_DETAIL_FETCH); i++) {
+      const model = models[i];
+      process.stdout.write(`  [${i+1}/${MAX_DETAIL_FETCH}] ${model.id}... `);
+      const details = await fetchModelDetail(model.id);
+      model.readme = details.readme;
+      model.submodels = details.submodels;
+      console.log('OK');
+      await sleep(150); // Be respectful
+  }
 
   return {
     source: 'huggingface',

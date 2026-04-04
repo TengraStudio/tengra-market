@@ -11,6 +11,7 @@ This repository hosts the official and community-contributed themes, MCP modules
 - `skills/`: Skill manifest files.
 - `models/ollama-models.json`: Scraped public Ollama model index.
 - `models/huggingface-models.json`: Scraped Hugging Face model index (filtered for Tengra-compatible categories).
+- `models/custom-models.json`: Manually managed custom model index for user-added models.
 - `scripts/scrape-ollama-models.mjs`: Ollama scraper script.
 - `scripts/scrape-hf-models.mjs`: Hugging Face scraper script.
 
@@ -39,6 +40,30 @@ This repository hosts the official and community-contributed themes, MCP modules
 - Behavior:
   - If model-level output is unchanged, workflow exits without commit
   - If changed, `models/huggingface-models.json` is updated and committed
+
+## Model source ownership
+
+- `models/ollama-models.json` is scraper-managed and can be overwritten by automation.
+- `models/huggingface-models.json` is scraper-managed and can be overwritten by automation.
+- `models/custom-models.json` is manual/user-managed and is reserved for user-added models.
+
+### Manual custom model schema
+
+`models/custom-models.json` uses the same top-level structure as other model source files:
+
+- `source` (string): Must be `custom`.
+- `generatedAt` (string or null): Optional timestamp for manual updates.
+- `total` (number): Count of entries in `models`.
+- `models` (array): List of manual model objects.
+
+Each model entry should follow these expected fields:
+
+- `id` (string): Stable unique identifier.
+- `slug` (string): URL/file-safe identifier.
+- `name` (string): Display name.
+- `description` (string): Short summary of the model.
+- `provider` (string): Provider or origin label (for example `custom`, `local`, or vendor name).
+- `sourceUrl` (string): Canonical model URL or repository link.
 
 ## Contributing
 
