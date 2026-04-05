@@ -146,16 +146,19 @@ function unescapeHtml(html) {
 
 async function fetchModelDetail(modelId) {
     const detailUrl = `${HF_BASE_URL}/${modelId}`;
+    const treeUrl = `${HF_BASE_URL}/${modelId}/tree/main`;
     const filesUrl = `${HF_BASE_URL}/api/models/${modelId}/tree/main`;
     
     try {
-        const [htmlResponse, filesResponse] = await Promise.all([
+        const [htmlResponse, treeResponse, filesResponse] = await Promise.all([
             fetch(detailUrl, { headers: { 'User-Agent': USER_AGENT } }),
+            fetch(treeUrl, { headers: { 'User-Agent': USER_AGENT } }),
             fetch(filesUrl, { headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' } })
         ]);
 
         let readme = '';
         let modelSize = '';
+        let totalSize = '';
         let tensorType = '';
 
         if (htmlResponse.ok) {
@@ -196,6 +199,15 @@ async function fetchModelDetail(modelId) {
             }
         }
 
+        // 3. Extract total repository size from tree view HTML
+        if (treeResponse.ok) {
+            const treeHtml = await treeResponse.text();
+            const sizeMatch = treeHtml.match(/class=["'][^"']*font-mono text-xs[^"']*["'][^>]*>\s*([\d.]+\s*[KMGT]B)\s*</i);
+            if (sizeMatch) {
+                totalSize = sizeMatch[1].trim();
+            }
+        }
+
         const submodels = [];
         if (filesResponse.ok) {
             const files = await filesResponse.json();
@@ -216,10 +228,10 @@ async function fetchModelDetail(modelId) {
             }
         }
 
-        return { readme, submodels };
+        return { readme, submodels, totalSize };
     } catch (error) {
         console.warn(`      [WARN] Failed to fetch details for ${modelId}:`, error.message);
-        return { readme: '', submodels: [] };
+        return { readme: '', submodels: [], totalSize: '' };
     }
 }
 
@@ -257,7 +269,8 @@ function normalizeModel(item) {
     category,
     sourceUrl: `${HF_BASE_URL}/${modelId}`,
     readme: '', // Placeholder
-    submodels: [] // Placeholder
+    submodels: [], // Placeholder
+    totalSize: '' // Placeholder
   };
 }
 
@@ -313,6 +326,7 @@ async function buildSnapshot() {
       const details = await fetchModelDetail(model.id);
       model.readme = details.readme;
       model.submodels = details.submodels;
+      model.totalSize = details.totalSize;
       console.log('OK');
       await sleep(150); // Be respectful
   }
