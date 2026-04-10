@@ -1,0 +1,35 @@
+{
+  "id": "tengrastudio.job-finder",
+  "name": "Job Finder",
+  "description": "AI-powered Job Search and CV Analysis plugin for Tengra",
+  "author": "TengraStudio",
+  "version": "1.0.0",
+  "itemType": "extension",
+  "category": "productivity",
+  "icon": "Briefcase",
+  "downloadUrl": "https://github.com/TengraStudio/job-finder-plugin.git",
+  "repository": "https://github.com/TengraStudio/job-finder-plugin",
+  "manifest": {
+    "id": "tengrastudio.job-finder",
+    "name": "job-finder-plugin",
+    "version": "1.0.0",
+    "description": "Job Search and CV Analysis Plugin for Tengra",
+    "main": "./dist/extension.js",
+    "ui": "src/ui/JobFinderView.tsx",
+    "contributes": {
+      "views": [
+        {
+          "id": "job-finder.main",
+          "title": "Job Finder",
+          "type": "sidebar",
+          "icon": "Briefcase"
+        }
+      ]
+    },
+    "activationEvents": [
+      {
+        "type": "onStartup"
+      }
+    ]
+  }
+}
