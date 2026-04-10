@@ -1,0 +1,32 @@
+{
+  "id": "tengra-screenshot",
+  "name": "Tengra Screenshot",
+  "description": "Windows desktop screenshot capture packaged as an external MCP plugin.",
+  "author": "Tengra Studio",
+  "version": "1.0.0",
+  "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/mcp/tengra-screenshot.mcp.json",
+  "itemType": "mcp",
+  "category": "utility",
+  "command": "node",
+  "args": [],
+  "entrypointUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/mcp/tengra-mcp-runner.mjs",
+  "entrypointFile": "server.mjs",
+  "env": {
+    "TENGRA_MCP_PLUGIN_ID": "tengra-screenshot"
+  },
+  "permissionProfile": "read-only",
+  "tools": [
+    {
+      "name": "capture",
+      "description": "Capture a Windows desktop screenshot to a PNG file."
+    }
+  ],
+  "storage": {
+    "dataPath": "tengra-screenshot",
+    "quotaMb": 256,
+    "migrationVersion": 1
+  },
+  "capabilities": [
+    "screenshot"
+  ]
+}

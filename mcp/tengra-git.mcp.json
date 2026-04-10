@@ -1,0 +1,44 @@
+{
+  "id": "tengra-git",
+  "name": "Tengra Git",
+  "description": "Read-only Git status, diff, log, and branch inspection tools packaged as an external MCP plugin.",
+  "author": "Tengra Studio",
+  "version": "1.0.0",
+  "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/mcp/tengra-git.mcp.json",
+  "itemType": "mcp",
+  "category": "workspace",
+  "command": "node",
+  "args": [],
+  "entrypointUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/mcp/tengra-mcp-runner.mjs",
+  "entrypointFile": "server.mjs",
+  "env": {
+    "TENGRA_MCP_PLUGIN_ID": "tengra-git"
+  },
+  "permissionProfile": "read-only",
+  "tools": [
+    {
+      "name": "status",
+      "description": "Read concise Git status for a repository."
+    },
+    {
+      "name": "diff",
+      "description": "Read Git diff for a repository or pathspec."
+    },
+    {
+      "name": "log",
+      "description": "Read recent Git commit log entries."
+    },
+    {
+      "name": "branches",
+      "description": "List local and remote Git branches."
+    }
+  ],
+  "storage": {
+    "dataPath": "tengra-git",
+    "quotaMb": 32,
+    "migrationVersion": 1
+  },
+  "capabilities": [
+    "git"
+  ]
+}

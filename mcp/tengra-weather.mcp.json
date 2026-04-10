@@ -1,0 +1,33 @@
+{
+  "id": "tengra-weather",
+  "name": "Tengra Weather",
+  "description": "Weather forecast tool powered by wttr.in, packaged as an external MCP plugin.",
+  "author": "Tengra Studio",
+  "version": "1.0.0",
+  "downloadUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/mcp/tengra-weather.mcp.json",
+  "itemType": "mcp",
+  "category": "internet",
+  "command": "node",
+  "args": [],
+  "entrypointUrl": "https://raw.githubusercontent.com/TengraStudio/tengra-market/main/mcp/tengra-mcp-runner.mjs",
+  "entrypointFile": "server.mjs",
+  "env": {
+    "TENGRA_MCP_PLUGIN_ID": "tengra-weather"
+  },
+  "permissionProfile": "network-enabled",
+  "tools": [
+    {
+      "name": "forecast",
+      "description": "Fetch a weather forecast for a location."
+    }
+  ],
+  "storage": {
+    "dataPath": "tengra-weather",
+    "quotaMb": 32,
+    "migrationVersion": 1
+  },
+  "capabilities": [
+    "network",
+    "weather"
+  ]
+}
