@@ -72,8 +72,31 @@
     },
     "translations": {
       "type": "object",
-      "additionalProperties": {
-        "$ref": "#/$defs/jsonValue"
+      "additionalProperties": false,
+      "required": [
+        "common",
+        "frontend",
+        "backend"
+      ],
+      "properties": {
+        "common": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/jsonValue"
+          }
+        },
+        "frontend": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/jsonValue"
+          }
+        },
+        "backend": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/jsonValue"
+          }
+        }
       }
     }
   },
