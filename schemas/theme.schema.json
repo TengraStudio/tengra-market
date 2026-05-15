@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Tengra Theme Manifest",
+  "description": "Schema for Tengra AI Assistant themes",
+  "type": "object",
+  "required": ["id", "name", "displayName", "version", "type", "colors"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the theme"
+    },
+    "name": {
+      "type": "string",
+      "description": "Machine-friendly name"
+    },
+    "displayName": {
+      "type": "string",
+      "description": "User-friendly name"
+    },
+    "description": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["light", "dark", "highContrast"]
+    },
+    "category": {
+      "type": "string"
+    },
+    "preview": {
+      "type": "string",
+      "description": "Hex color or URL for preview"
+    },
+    "colors": {
+      "type": "object",
+      "required": ["background", "foreground", "primary", "secondary", "accent", "muted", "border", "input", "ring"],
+      "properties": {
+        "background": { "type": "string" },
+        "foreground": { "type": "string" },
+        "card": { "type": "string" },
+        "cardForeground": { "type": "string" },
+        "popover": { "type": "string" },
+        "popoverForeground": { "type": "string" },
+        "primary": { "type": "string" },
+        "primaryForeground": { "type": "string" },
+        "secondary": { "type": "string" },
+        "secondaryForeground": { "type": "string" },
+        "muted": { "type": "string" },
+        "mutedForeground": { "type": "string" },
+        "accent": { "type": "string" },
+        "accentForeground": { "type": "string" },
+        "destructive": { "type": "string" },
+        "destructiveForeground": { "type": "string" },
+        "border": { "type": "string" },
+        "input": { "type": "string" },
+        "ring": { "type": "string" },
+        "radius": { "type": "number" },
+        "fontFamily": { "type": "string" },
+        "glowColor": { "type": "string" },
+        "shadowColor": { "type": "string" }
+      },
+      "additionalProperties": { "type": "string" }
+    },
+    "vars": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "isPremium": { "type": "boolean" },
+    "publisher": { "type": "string" },
+    "repository": { "type": "string" },
+    "license": { "type": "string" },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
